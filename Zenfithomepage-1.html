@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"> <!--sets the language to english by default-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+  <title>ZenFit</title>
+  <link href="stylesheet.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Link from boxicons-->
+</head>
+
+<body>
+
+    <header class="header"> <!--class set for header as a whole-->
+      <img className="zenfitlogo" src="zenfitlogo 1.png"/> <!--Logo Image-->
+        <a href="#" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
+
+        <nav class="navbar"> <!--Navigation bar within the header-->
+            <a href="Classes-1.html">Classes</a>
+            <a href="#">Book</a>
+            <a href="#">About</a>
+            <Button class="SignInButton" size="small" variant="outlined"> <!--Button for the signing in to an account. Might need to add <a href="#"> at some point-->
+              Sign in
+            </Button></a>
+            <Button class="RigisterButton" size="small" variant="contained"> <!--Button for registering an account-->
+              Register
+            </Button>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="image-container"> <!--Container that is Containing the welcome screen-->
+            <img src="pexels-mastercowley-1300526 2.jpg" alt="" class="background-image"> <!--Big background image on the home screen of beach lady-->
+            <div class="text-overlay">
+                <h1>Welcome to ZenFit</h1>
+                <h3>Your destination for fitness and wellness</h3>
+                <a href="#" class="ExploreButton">Explore Classes</a> <!--Button to be used to take you to the class page-->
+            </div>
+        </div>
+
+    </section>
+
+    <section class="card-section">
+        <h1 class="main-title">Take Part in our Rewarding Classes</h1>
+        <div class="card-container"> <!--All cards should link to their respective class pages which will not be made in this assignment as that is too many pages and hard :( )-->
+            <div class="card">
+                <a href="#">
+                    <img src="pexels-olly-3768730 1.png" alt="">
+                    <h2>Pilates</h2>
+                    <p>Improve flexibility and core strength</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="pexels-olly-868483 1.png" alt="">
+                    <h2>Yoga</h2>
+                    <p>Find balance and inner peace</p>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <img src="pexels-andres-ayrton-6550852 1.png" alt="">
+                    <h2>HIIT</h2>
+                    <p>High-intensity interval training for ultimate burn</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="mem-container"> <!--Section is dedicated to the memberships. Selecting one should take you to a page to purchace-->
+            <div class="left-section"> <!--These cards were hard to make the way I wanted-->
+                <h1 class="mem-title">Join our Membership Plan</h1>
+                <div class="mem-card-container">
+                    <a href="#" class="mem-card">
+                        <img src="pexels-shkrabaanthony-4662355 1.png" alt="Card Image 1" class="mem-card-image">
+                        <h2 class="mem-card-title">Basic</h2>
+                        <p class="mem-card-description">Access to all classes</p>
+                    </a>
+                    <a href="#" class="mem-card">
+                        <img src="pexels-shkrabaanthony-4662359 1.png" alt="Card Image 2" class="mem-card-image">
+                        <h2 class="mem-card-title">Premium</h2>
+                        <p class="mem-card-description">Additional workshops and personalized plans</p>
+                    </a>
+                </div>
+                <a href="#" class="big-card">
+                    <img src="pexels-shkrabaanthony-4662334 1.png" alt="Big Card Image" class="big-card-image">
+                    <h2 class="big-card-title">VIP</h2>
+                    <p class="big-card-description">Exclusive benefits and 1-on-1 sessions</p>
+                </a>
+            </div>
+            <div class="right-section">
+                <img src="pexels-annushka-ahuja-7991921 1.png" alt="Portrait" class="portrait-image">
+            </div>
+        </div>
+    </section>
+    
+    <Section>
+        <footer class="footer"> <!--Basic footer for the home page with social medias-->
+            <div class="footer-content">
+                <h2>Follow us on Social Media for Updates</h2>
+                <div class="social-media"></div>
+                    <a href="#"><i class='bx bxl-facebook-square'></i></a> <!--Social media icons from boxicons-->
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+        </footer>
+    </Section>
+
+
+
+</body>
+
+</html>
