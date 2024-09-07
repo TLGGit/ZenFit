@@ -14,24 +14,75 @@
 
     <header class="header"> <!--class set for header as a whole-->
         <img className="zenfitlogo" src="zenfitlogo 1.png"/> <!--Logo Image-->
-        <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
-
-        <nav class="navbar"> <!--Navigation bar within the header-->
-            <a href="Classes-1.html">Classes</a>
-            <a href="Booking-1.html">Book</a>
-            <a href="#">About</a>
-            <Button class="SignInButton" size="small" variant="outlined"> <!--Button for the signing in to an account. Might need to add <a href="#"> at some point-->
-            Sign in
-            </Button></a>
-            <Button class="RigisterButton" size="small" variant="contained"> <!--Button for registering an account-->
-            Register
-            </Button>
-        </nav>
-    </header>
+          <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
+  
+          <nav class="navbar"> <!--Navigation bar within the header-->
+              <a href="Classes-1.html">Classes</a>
+              <a href="Booking-1.html">Booking</a>
+              <a href="About-1.html">About</a>
+              <a href="Join-1.html">
+                  <Button class="SignInButton" size="small" variant="outlined">
+                  Sign in
+                  </Button>
+              </a>
+              <a href="Join-1.html">
+                  <Button class="RegisterButton" size="small" variant="contained">
+                  Register
+                  </Button>
+              </a>
+          </nav>
+      </header>
 
     <Section>
-
+        <div class="gym-staff-section"> <!--Section that would have clickable bubbles of gym staff where it would go into futher detail about each individual on a click-->
+            <h2 class="gym-staff-title">Meet Our Gym Staff</h2>
+            <p class="gym-staff-subtitle">Passionate individuals dedicated to your fitness journey.</p>
+            <div class="gym-staff-images">
+                <div class="gym-staff-member">
+                    <img src="pexels-nappy-936119 1.png" alt="" class="gym-staff-image" />
+                    <h3 class="gym-staff-name">Mark Henry</h3>
+                    <p class="gym-staff-profession">Cardio Specialist</p>
+                </div>
+                <div class="gym-staff-member">
+                    <img src="pexels-pixabay-415829 1.png" alt="" class="gym-staff-image" />
+                    <h3 class="gym-staff-name">Asuka Urai</h3>
+                    <p class="gym-staff-profession">Yoga Instructor</p>
+                </div>
+                <div class="gym-staff-member">
+                    <img src="pexels-samad-ismayilov-231721-73555shortform 1.png" alt="" class="gym-staff-image" />
+                    <h3 class="gym-staff-name">Mike Johnson</h3>
+                    <p class="gym-staff-profession">Fitness Trainer</p>
+                </div>
+            </div>
+        </div>
     </Section>
+
+    <section class="testimonial-section"> <!--Section that would show multiple client reviews-->
+        <div class="title-container">
+            <h1 class="testimonial-title">Client Testimonials</h1>
+            <p class="testimonial-subtitle">See what our clients have to say about ZenFit.</p>
+        </div>
+        <div class="reviews-container">
+            <div class="client-box unique-client-box-1">
+                <img src="blank-profile-picture-973460_960_720 1.png" alt="" class="profile-picture">
+                <span class="client-name">Lina Oxton</span>
+                <span class="star-rating">★★★★★</span>
+                <p>"ZenFit changed my life!"</p>
+            </div>
+            <div class="client-box unique-client-box-2">
+                <img src="blank-profile-picture-973460_960_720 1.png" alt="" class="profile-picture">
+                <span class="client-name">Alex Little</span>
+                <span class="star-rating">★★★★☆</span>
+                <p>"Great facilities and friendly staff!"</p>
+            </div>
+        </div>
+    </section>
+
+    <section> <!--Map banner placeholder. Would be a live google map, if the business was real-->
+        <div class="banner">
+            <img src="Screenshot (216) 1.png" alt="">
+        </div>
+    </section>
 
     <Section>
         <footer class="footer"> <!--Basic footer for the home page with social medias-->

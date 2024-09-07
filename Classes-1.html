@@ -15,21 +15,115 @@
 
   <header class="header"> <!--class set for header as a whole-->
     <img className="zenfitlogo" src="zenfitlogo 1.png"/> <!--Logo Image-->
-      <a href="#" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
+      <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
 
       <nav class="navbar"> <!--Navigation bar within the header-->
           <a href="Classes-1.html">Classes</a>
-          <a href="#">Book</a>
-          <a href="#">About</a>
-          <Button class="SignInButton" size="small" variant="outlined"> <!--Button for the signing in to an account. Might need to add <a href="#"> at some point-->
-            Sign in
-          </Button></a>
-          <Button class="RigisterButton" size="small" variant="contained"> <!--Button for registering an account-->
-            Register
-          </Button>
+          <a href="Booking-1.html">Booking</a>
+          <a href="About-1.html">About</a>
+          <a href="Join-1.html">
+              <Button class="SignInButton" size="small" variant="outlined">
+              Sign in
+              </Button>
+          </a>
+          <a href="Join-1.html">
+              <Button class="RegisterButton" size="small" variant="contained">
+              Register
+              </Button>
+          </a>
       </nav>
   </header>
 
-  <section>
-    
+  <section class="class-card-section">
+    <h1 class="class-main-title">Classes</h1>
+    <div class="card-container"> <!--All cards should link to their respective class pages which will not be made in this assignment as that is too many pages and hard :( )-->
+        <div class="class-card">
+            <a href="Classes-1.html">
+                <img src="pexels-olly-3768730 1.png" alt="">
+                <h2>Pilates</h2>
+                <p>45 Minutes</p>
+            </a>
+        </div>
+        <div class="class-card">
+            <a href="Classes-1.html">
+                <img src="pexels-olly-868483 1.png" alt="">
+                <h2>Yoga</h2>
+                <p>60 Minutes</p>
+            </a>
+        </div>
+        <div class="class-card">
+            <a href="Classes-1.html">
+                <img src="pexels-andres-ayrton-6550852 1.png" alt="">
+                <h2>HIIT</h2>
+                <p>30 Minutes</p>
+            </a>
+        </div>
+    </div>
   </section>
+
+  <section>
+    <div class="cls-container"> <!--On site advertisements for other parts of the site that aren't neccary for this assessment. Would be clickable otherwise-->
+      <h1 class="cls-title">Get Fit with Us</h1>
+      <div class="cls-box-container">
+          <div class="cls-box">
+              <img src="pexels-samad-ismayilov-231721-735551 1.png" alt="" class="cls-box-image">
+              <div class="cls-box-content">
+                  <h2 class="cls-box-title">Expert Instructors</h2>
+                  <p class="cls-box-description">Our experienced instructors will guide you through each class.</p>
+              </div>
+          </div>
+          <div class="cls-box">
+              <img src="pexels-olly-868704 1.png" alt="" class="cls-box-image">
+              <div class="cls-box-content">
+                  <h2 class="cls-box-title">Personalized Plans</h2>
+                  <p class="cls-box-description">Tailored workout plans to help you achieve your fitness goals.</p>
+              </div>
+          </div>
+      </div>
+      <div class="cls-box3">
+          <img src="pexels-olly-866027 1.png" alt="" class="cls-box-image">
+          <div class="cls-box-content">
+              <h2 class="cls-box-title">Community Support</h2>
+              <p class="cls-box-description">Join a community of like-minded individuals on a journey to wellness.</p>
+          </div>
+      </div>
+  </div>
+  </section>
+
+  <section>
+    <div class="upcoming-classes"> <!--Show off the upcoming classes, would auto update on the real website-->
+      <h1 class="up-title">Upcoming Classes</h1>
+      <div class="up-classes">
+          <div class="up-class-item">
+              <img src="pexels-dmytro-1259064-2394051 1.png" alt="Class 1" class="up-circular-image">
+              <h2 class="up-class-name">Yoga</h2>
+              <p class="up-day-time">Wednesday<br><span class="up-time">2:00 PM - 3:00 PM</span></p>
+          </div>
+          <div class="up-class-item">
+              <img src="pexels-julia-larson-6456135 1.png" alt="Class 2" class="up-circular-image">
+              <h2 class="up-class-name">HIIT</h2>
+              <p class="up-day-time">Saturday<br><span class="up-time">10:00 AM - 11:00 AM</span></p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="banner">
+      <img src="pexels-olly-866021 1.png" alt="">
+    </div>
+  </section>
+
+  <Section>
+    <footer class="footer"> <!--Basic footer for the home page with social medias-->
+        <div class="footer-content">
+            <h2>Follow us on Social Media for Updates</h2>
+            <div class="social-media"></div>
+                <a href="#"><i class='bx bxl-facebook-square'></i></a> <!--Social media icons from boxicons-->
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+    </footer>
+  </Section>
+</body>

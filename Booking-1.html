@@ -14,24 +14,117 @@
 
     <header class="header"> <!--class set for header as a whole-->
         <img className="zenfitlogo" src="zenfitlogo 1.png"/> <!--Logo Image-->
-        <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
-
-        <nav class="navbar"> <!--Navigation bar within the header-->
-            <a href="Classes-1.html">Classes</a>
-            <a href="#">Book</a>
-            <a href="#">About</a>
-            <Button class="SignInButton" size="small" variant="outlined"> <!--Button for the signing in to an account. Might need to add <a href="#"> at some point-->
-            Sign in
-            </Button></a>
-            <Button class="RigisterButton" size="small" variant="contained"> <!--Button for registering an account-->
-            Register
-            </Button>
-        </nav>
-    </header>
+          <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
+  
+          <nav class="navbar"> <!--Navigation bar within the header-->
+              <a href="Classes-1.html">Classes</a>
+              <a href="Booking-1.html">Booking</a>
+              <a href="About-1.html">About</a>
+              <a href="Join-1.html">
+                  <Button class="SignInButton" size="small" variant="outlined">
+                  Sign in
+                  </Button>
+              </a>
+              <a href="Join-1.html">
+                  <Button class="RegisterButton" size="small" variant="contained">
+                  Register
+                  </Button>
+              </a>
+          </nav>
+      </header>
 
     <Section>
-
+        <div class="Book-container">
+            <div class="Book-text-section">
+                <h1>Book Your Class</h1>
+                <p>Select Day, Time, Class, and Instructor.</p>
+            </div>
+            <div class="Book-image-section">
+                <img src="pexels-olly-864939 1.png" alt="">
+            </div>
+        </div>
     </Section>
+
+    <section>
+        <div class="bok-booking-section">
+            <div class="bok-box">
+                <h3>Select Day</h3> <!--Full selection options for the booking process. Buttons will be pressable-->
+                <button class="button" onclick="toggleActive(this)">Monday</button>
+                <button class="button" onclick="toggleActive(this)">Tuesday</button>
+                <button class="button" onclick="toggleActive(this)">Wednesday</button>
+                <button class="button" onclick="toggleActive(this)">Thursday</button>
+                <button class="button" onclick="toggleActive(this)">Friday</button>
+                <button class="button" onclick="toggleActive(this)">Saturday</button>
+                <button class="button" onclick="toggleActive(this)">Sunday</button>
+            </div>
+    
+            <div class="bok-box">
+                <h3>Select Time</h3>
+                <button class="button" onclick="toggleActive(this)">Morning</button>
+                <button class="button" onclick="toggleActive(this)">Afternoon</button>
+                <button class="button" onclick="toggleActive(this)">Evening</button>
+            </div>
+    
+            <div class="bok-box">
+                <h3>Select Class</h3>
+                <button class="button" onclick="toggleActive(this)">Yoga</button>
+                <button class="button" onclick="toggleActive(this)">Pilates</button>
+                <button class="button" onclick="toggleActive(this)">HIIT</button>
+            </div>
+    
+            <div class="bok-box">
+                <h3>Select Instructor</h3>
+                <button class="button" onclick="toggleActive(this)">Mark Henry</button>
+                <button class="button" onclick="toggleActive(this)">Asuka Urai</button>
+                <button class="button" onclick="toggleActive(this)">Mike Johnson</button>
+                <button class="button" onclick="toggleActive(this)">Ben Hata</button>
+            </div>
+    
+            <h2>Confirm Booking</h2>
+            <p>Please review your selection before confirming.</p>
+        
+            <div class="bok-form-field"> <!--Fields to finalize the booking process. Name, Email and optional phone number-->
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+        
+            <div class="bok-form-field">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+        
+            <div class="bok-form-field">
+                <label for="phone">Phone (Optional):</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+    
+            <div class="bok-confirm-buttons">
+                <button class="button" onclick="confirmBooking()">Confirm Booking</button>
+                <button class="button" onclick="cancelBooking()">Cancel</button>
+            </div>
+        </div>
+    
+        <!--Attempt at an alert script, doesn't work. But keeping ot for later to try get it working-->
+        <script> 
+            function toggleActive(button) {
+                button.classList.toggle('active');
+            }
+    
+            function confirmBooking() {
+                alert('Booking Confirmed!');
+            }
+    
+            function cancelBooking() {
+                alert('Booking Canceled!');
+            }
+        </script>
+    </section>
+
+    <section>
+        <div class="banner">
+          <img src="pexels-olly-3775587 1.png" alt="">
+        </div>
+      </section>
 
     <Section>
         <footer class="footer"> <!--Basic footer for the home page with social medias-->

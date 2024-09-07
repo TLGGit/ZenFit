@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"> <!--sets the language to english by default-->
 
 <head>
@@ -14,23 +14,45 @@
 
     <header class="header"> <!--class set for header as a whole-->
         <img className="zenfitlogo" src="zenfitlogo 1.png"/> <!--Logo Image-->
-        <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
-
-        <nav class="navbar"> <!--Navigation bar within the header-->
-            <a href="Classes-1.html">Classes</a>
-            <a href="Booking-1.html">Book</a>
-            <a href="About-1.html">About</a>
-            <Button class="SignInButton" size="small" variant="outlined" href=""> <!--Button for the signing in to an account. Might need to add <a href="#"> at some point-->
-            Sign in
-            </Button></a>
-            <Button class="RigisterButton" size="small" variant="contained" href=""> <!--Button for registering an account-->
-            Register
-            </Button>
-        </nav>
+          <a href="Zenfithomepage-1.html" class="logo">ZenFit</a> <!--For the logo name, not the logo picture-->
+  
+          <nav class="navbar"> <!--Navigation bar within the header-->
+              <a href="Classes-1.html">Classes</a>
+              <a href="Booking-1.html">Booking</a>
+              <a href="About-1.html">About</a>
+              <a href="Join-1.html">
+                  <Button class="SignInButton" size="small" variant="outlined">
+                  Sign in
+                  </Button>
+              </a>
+              <a href="Join-1.html">
+                  <Button class="RegisterButton" size="small" variant="contained">
+                  Register
+                  </Button>
+              </a>
+          </nav>
     </header>
 
-    <Section>
+    <section>
+        <div class="banner">
+            <img src="pexels-olly-864990 1.png" alt="">
+        </div>
+    </section>
 
+    <Section>
+        <div class="login-container">
+            <h1>Login</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+            <p class="login-signup-prompt">Don't have an account? <a href="#">Sign Up</a></p>
+        </div>
     </Section>
 
     <Section>

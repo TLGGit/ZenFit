@@ -1,9 +1,10 @@
 
-
+/*Site body color*/
 body {
     background: #ffffff;
 }
 
+/*Header formatting*/
 .header {
     align-items: center;
     background-color: #e1d9ce80;
@@ -16,13 +17,12 @@ body {
     padding: 20px 20px 20px 0px;
     position: absolute;
     top: 0;
-    width: 1844px;
+    width: 1883px;
 }
 
 .zenfitlogo {
     height: 80px;
-    margin-bottom: -20px;
-    margin-top: -20px;
+    margin-top: 10px;
     object-fit: cover;
     position: relative;
     width: 35px;
@@ -82,7 +82,7 @@ body {
     background-color: rgb(184, 184, 184); /*Darker color on hover by 25%*/
 }
 
-.RigisterButton {
+.RegisterButton {
     display: inline-block; 
     padding: 10px 20px; 
     background-color: rgb(44, 44, 44); 
@@ -100,10 +100,12 @@ body {
     line-height: 100%;
 }
 
-.RigisterButton:hover {
+.RegisterButton:hover {
     background-color: rgb(98, 98, 98); /* Lighten color on hover by 25% */
 } 
 
+
+/*Formatting for front page image and text*/
 .text-overlay h1{ /*Text that goes over the image on the home page*/
     font-size: 50px;
     line-height: -1.2;
@@ -137,13 +139,13 @@ body {
 
 .image-container {
     position: relative;
-    width: 1866px; 
+    width: 1895px; 
     height: auto;
     margin-top: 80px; 
 }
 
 .background-image {
-    width: 1866px;
+    width: 1904px;
     height: auto;
     margin-left: -10px;
 }
@@ -159,6 +161,7 @@ body {
     text-align: center; 
 }
 
+/*Card section of the home page that navigate to the classes*/
 .card-section {
     text-align: center;
     font-family: "Roboto Flex-Light", Helvetica;
@@ -201,7 +204,7 @@ body {
     margin: 0 10px 10px;
 }
 
-/*Style for the main title of the card section*/
+/*Style for the membership card section*/
 .main-title {
     font-size: 40px;
     margin-bottom: 30px; /*Space below the title*/
@@ -263,46 +266,417 @@ body {
 .big-card {
     display: block;
     background-color: #e1d9ce80;
-    border: 1px solid #e1d9ce80; /*Outer border*/
+    border: 1px solid #e1d9ce80; /* Outer border */
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s;
-    padding: 0; /*Remove padding to hug the image*/
     margin-top: 20px;
     text-decoration: none;
     font-family: "Roboto Flex-Light", Helvetica;
+    border-left: none;  /* Remove left border */
+    border-right: none; /* Remove right border */
 }
 
 .big-card:hover {
-    transform: scale(1.05); /*Slightly enlarge card on hover*/
+    transform: scale(1.05); /* Slightly enlarge card on hover */
 }
 
 .big-card-image {
-    width: 100%; 
+    width: 90%; 
     height: auto;
     border-radius: 8px;
+    border-bottom: 1px solid #e1d9ce80; /* Keep bottom border for the image */
 }
 
 .portrait-image {
-    width: 100%; /*Make the image responsive*/
-    max-height: 1170px; /*Adjust height to fit the left section*/
+    width: 80%; /*Make the image responsive*/
+    max-height: 1290px; /*Adjust height to fit the left section*/
     object-fit: cover; /*Cover the area without distortion*/ /*Still feels distorted slightly lol*/
-    margin-top: 85px;
+    margin-top: 100px;
+    margin-left: 100px;
 }
 
 .footer {
     background-color: #e1d9ce80;
     text-align: center; 
-    padding: 40px;
+    padding: 20px; 
+    height: 100px; 
 }
 
 .footer-content {
-    max-width: 800px; 
-    margin: 0 auto; /*Center the content*/
+    max-width: 400px; 
+    margin: 0 auto; /* Center the content */
 }
 
 .social-media {
-    margin-top: 10px; /*Space between title and social media links*/
+    margin-top: 10px; /* Space between title and social media links */
+}
+/*Want to resize the social media icons at some point*/
+
+/*Card section of the class page*/
+
+.class-main-title {
+    font-size: 40px;
+    margin-bottom: 30px; /*Space below the title*/
+    font-weight: bold; /*Make the title bold*/
 }
 
-/*Want to resize the social media icons at some point*/
+.class-card-section {
+    text-align: center;
+    font-family: "Roboto Flex-Light", Helvetica;
+    text-decoration: none;
+    margin-top: 100px;
+}
+
+.class-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /*Space between cards*/
+}
+
+.class-card {
+    background-color: #e1d9ce80;
+    border: 1px solid #e1d9ce80;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.class-card:hover {
+    transform: scale(1.05); /*Slightly enlarge card on hover*/
+}
+
+.class-card img {
+    width: 100%; /*Responsive image*/
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.class-card h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.class-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 0 10px 10px;
+}
+
+/*Boxes under the "Get Fit with Us" title on the class page*/
+
+.cls-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+    font-family: "Roboto Flex-Light", Helvetica;
+}
+
+.cls-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cls-box-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cls-box {
+    background-color: #e1d9ce80;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    flex: 1;
+    max-width: 600px; /* Adjusts the box width */
+    display: flex;
+}
+
+.cls-box3 {
+    background-color: #e1d9ce80;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    margin-left: 100px;
+    padding: 20px;
+    flex: 1;
+    max-width: 1265px; /* Adjusts the box width */
+    display: flex;
+}
+
+.cls-box-image {
+    width: 70px; /* Small square image on the left */
+    height: 80px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.cls-box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cls-box-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.cls-box-description {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/*This is for the "Upcoming Classes" section*/
+
+.upcoming-classes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+    font-family: "Roboto Flex-Light", Helvetica;
+}
+
+.up-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-left: 300px;
+}
+
+.up-classes {
+    display: flex;
+}
+
+.up-class-item {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.up-circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 200px;
+}
+
+.up-class-name {
+    font-size: 1.5em;
+    color: #555;
+    margin: 10px 0 5px 0;
+    margin-right: 200px;
+}
+
+.up-day-time {
+    font-size: 1em;
+    color: #777;
+    margin-right: 200px;
+}
+
+.up-time {
+    font-weight: lighter;
+}
+
+/*Banner for the bottom of the classes page*/
+.banner {
+    text-align: center; 
+    margin: 20px 0; 
+    margin-top: 100px;
+}
+
+/*Top of the booking page, title and image*/
+.Book-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 120px;
+    font-family: "Roboto Flex-Light", Helvetica;
+}
+
+.Book-text-section {
+    max-width: 50%;
+    margin-left: 350px;
+}
+
+.Book-text-section h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.Book-text-section p {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+.Book-image-section img {
+    width: 620px;
+    height: 500px;
+    margin-right: 200px;
+}
+
+/* Formatting for the booking form*/
+.bok-booking-section {
+    font-family: "Roboto Flex-Light", Helvetica;
+    text-align: center; /* Center-align all text elements */
+    padding: 20px;
+    margin: 20px;
+}
+
+.bok-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #388E3C;
+}
+
+.bok-form-field {
+    margin-bottom: 10px;
+}
+
+.bok-confirm-buttons {
+    margin-top: 20px;
+}
+
+/* Center the labels and inputs */
+.bok-form-field label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.bok-form-field input {
+    width: 80%; 
+    padding: 8px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+    margin: 0 auto; 
+    display: block;
+}
+
+/*Meet our staff section*/
+.gym-staff-section {
+    text-align: center;
+    margin: 40px 0; 
+    margin-top: 110px;
+    font-family: "Roboto Flex-Light", Helvetica;
+}
+
+.gym-staff-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.gym-staff-subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.gym-staff-images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gym-staff-member {
+    text-align: center;
+}
+
+.gym-staff-image {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+
+.gym-staff-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.gym-staff-profession {
+    font-size: 0.9em;
+    color: #888;
+}
+
+/*Client testimonials section*/
+.testimonial-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px; 
+    border-radius: 10px;
+    margin-top: 130px;
+    font-family: "Roboto Flex-Light", Helvetica;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin-left: 300px;
+}
+
+.testimonial-title {
+    font-size: 40px; 
+    font-weight: bold;
+    margin: 0 0 10px 0; 
+    margin-top: 30px;
+}
+
+.testimonial-subtitle {
+    font-size: 14px; 
+    color: #666;
+}
+
+.reviews-container {
+    display: flex; 
+}
+
+.client-box {
+    background-color: #e1d9ce80;
+    border-radius: 8px;
+    padding: 30px; 
+    width: 100%; 
+    max-width: 250px; 
+    margin-right: 150px;
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.profile-picture {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.star-rating {
+    color: gold;
+}
